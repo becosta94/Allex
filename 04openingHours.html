@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allex - Formulário de Cadastro</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="divFlexRow" style="margin: auto">
+      <div>
+        <a href="https://allex.delivery/" target="blank">
+          <img
+            id="logoAllex"
+            src="assets/img/logoAllex.png"
+            alt="Logo Allex"
+            width="110"
+            height="50"
+          />
+        </a>
+      </div>
+    </header>
+    <section class="size4">
+      <div class="background">
+        <h1 class="text2" style="text-align: center">DADOS BANCÁRIOS</h1>
+        <h6>
+          A conta bancária informada deve ter como titular o CNPJ informado
+          anteriormente
+        </h6>
+        <div class="divInputs">
+          <p class="text2">Titular</p>
+          <input class="inputDisable" type="text" disabled />
+        </div>
+        <div
+          class="half"
+          style="justify-content: flex-start; align-items: flex-end"
+        >
+          <div class="divInputs">
+            <p class="text2">CNPJ</p>
+            <input class="inputDisable" type="text" disabled />
+          </div>
+          <div class="divInputs">
+            <button class="buttonWhite">NÃO TENHO CONTA PJ</button>
+          </div>
+        </div>
+        <div class="divInputs">
+          <p class="text2">Banco*</p>
+          <input
+            class="input-text"
+            type="text"
+            placeholder="Banco"
+            autocomplete="on"
+          />
+        </div>
+        <div class="half">
+          <div class="divInputs">
+            <p class="text2" style="text-align: center">Agência</p>
+            <input class="input-text" type="text" />
+          </div>
+          <div class="divInputs">
+            <p class="text2" style="text-align: center">Conta</p>
+            <input class="input-text" type="text" />
+          </div>
+          <div class="divInputs" style="width: 10%">
+            <p class="text2" style="text-align: center">Dígito</p>
+            <input class="input-text" type="text" />
+          </div>
+        </div>
+        <div class="divInputs">
+          <p class="text2">Tipo de conta</p>
+          <select name="tipo_conta" class="input-text">
+            <option value=""></option>
+            <option value="Conta Corrente">Conta Corrente</option>
+            <option value="Conta Poupança">Conta Poupança</option>
+            <option value="Conta Corrente Conjunta">
+              Conta Corrente Conjunta
+            </option>
+            <option value="Conta Poupança Conjunta">
+              Conta Poupança Conjuntan>
+            </option>
+          </select>
+        </div>
+        <div class="half" style="margin: 20px 0px">
+          <div class="divInputs">
+            <a href="03bankeryData.html">
+              <button class="buttonWhite" id="proximo1">ANTERIOR</button>
+            </a>
+          </div>
+          <div class="divInputs">
+            <a href="05images.html">
+              <button class="buttonPurple" id="proximo1">PRÓXIMO</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <div>
+          <div>
+            <h2>Allex</h2>
+          </div>
+          <div>
+            <p>Av. Presidente Antônio Carlos, 681</p>
+            <p>Loja 12, Lagoinha</p>
+            <p>Belo Horizonte/MG</p>
+            <p>CEP 31210-010</p>
+          </div>
+          <div class="footer-text">
+            <p>E-mail: comercial@alex.delivery</p>
+          </div>
+        </div>
+        <div></div>
+        <div>
+          <h2>Redes Sociais</h2>
+          <div class="footer-icons">
+            <div>
+              <a
+                class="icons"
+                href="https://twitter.com/allexdelivery"
+                target="blank"
+              >
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+            <div>
+              <a
+                class="icons"
+                href="https://www.facebook.com/allexdelivery"
+                target="blank"
+              >
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div>
+              <a
+                class="icons"
+                href="https://www.instagram.com/allexdelivery/"
+                target="blank"
+              >
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <div class="copyright">© Copyright Allex. Todos direitos reservados</div>
+</html>
