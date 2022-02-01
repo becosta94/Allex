@@ -33,69 +33,345 @@
       <div class="background">
         <h1 class="text2" style="text-align: center">DADOS BANCÁRIOS</h1>
         <h6>
-          A conta bancária informada deve ter como titular o CNPJ informado
-          anteriormente
+          Selecione primeiramente o dia em que sua loja estará aberta e depois
+          adicione o horário de funcionamento.
         </h6>
-        <div class="divInputs">
-          <p class="text2">Titular</p>
-          <input class="inputDisable" type="text" disabled />
+        <div>
+          <div class="half" style="align-items: center">
+            <div>
+              <div
+                class="check"
+                style="display: grid; justify-items: center"
+                onclick="showHourSegunda()"
+              >
+                <div style="grid-column: 1; grid-row: 1">
+                  <i
+                    class="fa fa-check-circle hidden aSegunda"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div style="grid-column: 1; grid-row: 1">
+                  <i class="fa fa-circle-o fSegunda" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div style="display: grid">
+                <p
+                  class="text3 hidden aSegunda"
+                  style="grid-column: 1; grid-row: 1"
+                >
+                  Aberto
+                </p>
+                <p class="text3 fSegunda" style="grid-column: 1; grid-row: 1">
+                  Fechado
+                </p>
+              </div>
+            </div>
+            <p class="text3">Segunda</p>
+            <div
+              class="divFlexCollum2 hidden aSegunda"
+              style="align-items: center"
+            >
+              <p class="text3">Abertura</p>
+              <input type="time" name="opening" />
+            </div>
+            <div
+              class="divFlexCollum2 hidden aSegunda"
+              style="align-items: center"
+            >
+              <p class="text3">Fechamento</p>
+              <input type="time" name="closing" />
+            </div>
+          </div>
         </div>
-        <div
-          class="half"
-          style="justify-content: flex-start; align-items: flex-end"
-        >
-          <div class="divInputs">
-            <p class="text2">CNPJ</p>
-            <input class="inputDisable" type="text" disabled />
-          </div>
-          <div class="divInputs">
-            <button class="buttonWhite">NÃO TENHO CONTA PJ</button>
+        <div>
+          <div class="half" style="align-items: center">
+            <div>
+              <div
+                class="check"
+                style="display: grid; justify-items: center"
+                onclick="showHourTerca()"
+              >
+                <div style="grid-column: 1; grid-row: 1">
+                  <i
+                    class="fa fa-check-circle hidden aTerca"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div style="grid-column: 1; grid-row: 1">
+                  <i class="fa fa-circle-o fTerca" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div style="display: grid">
+                <p
+                  class="text3 hidden aTerca"
+                  style="grid-column: 1; grid-row: 1"
+                >
+                  Aberto
+                </p>
+                <p class="text3 fTerca" style="grid-column: 1; grid-row: 1">
+                  Fechado
+                </p>
+              </div>
+            </div>
+            <p class="text3">Terça</p>
+            <div
+              class="divFlexCollum2 hidden aTerca"
+              style="align-items: center"
+            >
+              <p class="text3">Abertura</p>
+              <input type="time" name="opening" />
+            </div>
+            <div
+              class="divFlexCollum2 hidden aTerca"
+              style="align-items: center"
+            >
+              <p class="text3">Fechamento</p>
+              <input type="time" name="closing" />
+            </div>
           </div>
         </div>
-        <div class="divInputs">
-          <p class="text2">Banco*</p>
-          <input
-            class="input-text"
-            type="text"
-            placeholder="Banco"
-            autocomplete="on"
-          />
+        <div>
+          <div class="half" style="align-items: center">
+            <div>
+              <div
+                class="check"
+                style="display: grid; justify-items: center"
+                onclick="showHourQuarta()"
+              >
+                <div style="grid-column: 1; grid-row: 1">
+                  <i
+                    class="fa fa-check-circle hidden aQuarta"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div style="grid-column: 1; grid-row: 1">
+                  <i class="fa fa-circle-o fQuarta" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div style="display: grid">
+                <p
+                  class="text3 hidden aQuarta"
+                  style="grid-column: 1; grid-row: 1"
+                >
+                  Aberto
+                </p>
+                <p class="text3 fQuarta" style="grid-column: 1; grid-row: 1">
+                  Fechado
+                </p>
+              </div>
+            </div>
+            <p class="text3">Quarta</p>
+            <div
+              class="divFlexCollum2 hidden aQuarta"
+              style="align-items: center"
+            >
+              <p class="text3">Abertura</p>
+              <input type="time" name="opening" />
+            </div>
+            <div
+              class="divFlexCollum2 hidden aQuarta"
+              style="align-items: center"
+            >
+              <p class="text3">Fechamento</p>
+              <input type="time" name="closing" />
+            </div>
+          </div>
         </div>
-        <div class="half">
-          <div class="divInputs">
-            <p class="text2" style="text-align: center">Agência</p>
-            <input class="input-text" type="text" />
-          </div>
-          <div class="divInputs">
-            <p class="text2" style="text-align: center">Conta</p>
-            <input class="input-text" type="text" />
-          </div>
-          <div class="divInputs" style="width: 10%">
-            <p class="text2" style="text-align: center">Dígito</p>
-            <input class="input-text" type="text" />
+        <div>
+          <div class="half" style="align-items: center">
+            <div>
+              <div
+                class="check"
+                style="display: grid; justify-items: center"
+                onclick="showHourQuinta()"
+              >
+                <div style="grid-column: 1; grid-row: 1">
+                  <i
+                    class="fa fa-check-circle hidden aQuinta"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div style="grid-column: 1; grid-row: 1">
+                  <i class="fa fa-circle-o fQuinta" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div style="display: grid">
+                <p
+                  class="text3 hidden aQuinta"
+                  style="grid-column: 1; grid-row: 1"
+                >
+                  Aberto
+                </p>
+                <p class="text3 fQuinta" style="grid-column: 1; grid-row: 1">
+                  Fechado
+                </p>
+              </div>
+            </div>
+            <p class="text3">Quinta</p>
+            <div
+              class="divFlexCollum2 hidden aQuinta"
+              style="align-items: center"
+            >
+              <p class="text3">Abertura</p>
+              <input type="time" name="opening" />
+            </div>
+            <div
+              class="divFlexCollum2 hidden aQuinta"
+              style="align-items: center"
+            >
+              <p class="text3">Fechamento</p>
+              <input type="time" name="closing" />
+            </div>
           </div>
         </div>
-        <div class="divInputs">
-          <p class="text2">Tipo de conta</p>
-          <select name="tipo_conta" class="input-text">
-            <option value=""></option>
-            <option value="Conta Corrente">Conta Corrente</option>
-            <option value="Conta Poupança">Conta Poupança</option>
-            <option value="Conta Corrente Conjunta">
-              Conta Corrente Conjunta
-            </option>
-            <option value="Conta Poupança Conjunta">
-              Conta Poupança Conjuntan>
-            </option>
-          </select>
+        <div>
+          <div class="half" style="align-items: center">
+            <div>
+              <div
+                class="check"
+                style="display: grid; justify-items: center"
+                onclick="showHourSexta()"
+              >
+                <div style="grid-column: 1; grid-row: 1">
+                  <i
+                    class="fa fa-check-circle hidden aSexta"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div style="grid-column: 1; grid-row: 1">
+                  <i class="fa fa-circle-o fSexta" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div style="display: grid">
+                <p
+                  class="text3 hidden aSexta"
+                  style="grid-column: 1; grid-row: 1"
+                >
+                  Aberto
+                </p>
+                <p class="text3 fSexta" style="grid-column: 1; grid-row: 1">
+                  Fechado
+                </p>
+              </div>
+            </div>
+            <p class="text3">Sexta</p>
+            <div
+              class="divFlexCollum2 hidden aSexta"
+              style="align-items: center"
+            >
+              <p class="text3">Abertura</p>
+              <input type="time" name="opening" />
+            </div>
+            <div
+              class="divFlexCollum2 hidden aSexta"
+              style="align-items: center"
+            >
+              <p class="text3">Fechamento</p>
+              <input type="time" name="closing" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="half" style="align-items: center">
+            <div>
+              <div
+                class="check"
+                style="display: grid; justify-items: center"
+                onclick="showHourSabado()"
+              >
+                <div style="grid-column: 1; grid-row: 1">
+                  <i
+                    class="fa fa-check-circle hidden aSabado"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div style="grid-column: 1; grid-row: 1">
+                  <i class="fa fa-circle-o fSabado" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div style="display: grid">
+                <p
+                  class="text3 hidden aSabado"
+                  style="grid-column: 1; grid-row: 1"
+                >
+                  Aberto
+                </p>
+                <p class="text3 fSabado" style="grid-column: 1; grid-row: 1">
+                  Fechado
+                </p>
+              </div>
+            </div>
+            <p class="text3">Sábado</p>
+            <div
+              class="divFlexCollum2 hidden aSabado"
+              style="align-items: center"
+            >
+              <p class="text3">Abertura</p>
+              <input type="time" name="opening" />
+            </div>
+            <div
+              class="divFlexCollum2 hidden aSabado"
+              style="align-items: center"
+            >
+              <p class="text3">Fechamento</p>
+              <input type="time" name="closing" />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="half" style="align-items: center">
+            <div>
+              <div
+                class="check"
+                style="display: grid; justify-items: center"
+                onclick="showHourDomingo()"
+              >
+                <div style="grid-column: 1; grid-row: 1">
+                  <i
+                    class="fa fa-check-circle hidden aDomingo"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+                <div style="grid-column: 1; grid-row: 1">
+                  <i class="fa fa-circle-o fDomingo" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div style="display: grid">
+                <p
+                  class="text3 hidden aDomingo"
+                  style="grid-column: 1; grid-row: 1"
+                >
+                  Aberto
+                </p>
+                <p class="text3 fDomingo" style="grid-column: 1; grid-row: 1">
+                  Fechado
+                </p>
+              </div>
+            </div>
+            <p class="text3">Domingo</p>
+            <div
+              class="divFlexCollum2 hidden aDomingo"
+              style="align-items: center"
+            >
+              <p class="text3">Abertura</p>
+              <input type="time" name="opening" />
+            </div>
+            <div
+              class="divFlexCollum2 hidden aDomingo"
+              style="align-items: center"
+            >
+              <p class="text3">Fechamento</p>
+              <input type="time" name="closing" />
+            </div>
+          </div>
         </div>
         <div class="half" style="margin: 20px 0px">
-          <div class="divInputs">
+          <div>
             <a href="03bankeryData.html">
               <button class="buttonWhite" id="proximo1">ANTERIOR</button>
             </a>
           </div>
-          <div class="divInputs">
+          <div>
             <a href="05images.html">
               <button class="buttonPurple" id="proximo1">PRÓXIMO</button>
             </a>
@@ -156,4 +432,5 @@
     </footer>
   </body>
   <div class="copyright">© Copyright Allex. Todos direitos reservados</div>
+  <script src="assets/js/script.js"></script>
 </html>
